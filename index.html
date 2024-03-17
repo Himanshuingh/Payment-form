@@ -5,60 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <style>
-        *{
-            box-sizing:border-box;
-        }
-        body{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 17px;
-            margin: 15px 30px;
-            padding: 10px;
-        }
-        .container{
-            background-color: #f2f2f2;
-            padding: 5px 20px 15px 20px;
-            border: 2px solid lightgray;
-            border-radius: 5px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        input[type="date"],
-        input[type="password"],
-        textarea,select{
-            width: 100%;
-            border-radius: 5px;
-            border: 2px solid #ccc;
-            padding: 12px;
-            margin: 10px;
-        }
-        fieldset{
-            background-color: #fff;
-            border:2px solid #ccc;
-            border-radius: 5px;
-        }
-        h1{
-            text-align: center;
-        }
-        input[type="submit"]{
-            background-color: #4daea1;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            width: 100%;
-            cursor: pointer;
-            padding: 12px 20px;
-        }
-        input[type="submit"]:hover{
-            background-color:blue;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="container">
-        <form action="" method="get">
+        <form action="" id="paymentForm">
+            <div class="alert">your Payment Success</div>
             <h1>
                 Payment Form
             </h1>
@@ -67,8 +20,8 @@
                 User Information
             </h2>
             <h4> This Field is Required (*)</h4>
-            <p>Name: *<input type="text" name="name" placeholder="Enter your name"required></p>
-            <fieldset>
+            <p>Name: *<input type="text" name="name" id="name" placeholder="Enter your name"required></p>
+            <fieldset id="gender">
                 <legend>Gender *</legend>
                 <p>
                     Male
@@ -100,5 +53,6 @@
             <input type="submit" value="Pay Now">
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
